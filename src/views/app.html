@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>URL Shortener</title>
+    <style>
+      .center {
+        margin: auto;
+        margin-top: 10%;
+        width: 60%;
+        border: 3px solid #ccc;
+        padding: 10px;
+        text-align: center;
+      }
+      #url {
+        width: 40%;
+      }
+      #date {
+        width: 10%;
+      }
+      #errors {
+        list-style-type: none;
+        color: red;
+      }
+    </style>
+    {% block head %}{% endblock %}
+  </head>
+  <body class="center">
+
+    <h1>URL Shortener</h1>
+    {% block content %}{% endblock %}
+
+  </body>
+</html>

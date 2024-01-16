@@ -1,0 +1,11 @@
+{% extends "app.html" %}
+
+{% block head %}
+  <meta http-equiv="refresh" content="3; url={{ url }}" />
+{% endblock %}
+
+{% block content %}
+  <h2>Redirecting to url...</h2>
+  <h3><a href="{{ url }}">{{ url }}</a></h3>
+  <p>Clicks: {{ clicks }}</p>
+{% endblock %}

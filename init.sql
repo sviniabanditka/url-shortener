@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS url (
+  identifier TEXT PRIMARY KEY NOT NULL,
+  original_url TEXT NOT NULL,
+  expired_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  clicks INTEGER NOT NULL DEFAULT 0
+);
+CREATE UNIQUE INDEX idx_url_identifier ON url (identifier);
